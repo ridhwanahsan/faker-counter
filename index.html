@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="advanced-tabs">
+        <!-- Tab Navigation -->
+        <div class="tab-nav-container">
+            <div class="tab-scroll">
+                <div class="tab-nav">
+                    <button class="tab-item active" data-tab="tab1">
+                        <i class="fas fa-rocket"></i>
+                        <span>Dashboard</span>
+                    </button>
+                    <button class="tab-item" data-tab="tab2">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>Analytics</span>
+                    </button>
+                    <button class="tab-item" data-tab="tab3">
+                        <i class="fas fa-cogs"></i>
+                        <span>Settings</span>
+                    </button>
+                    <button class="tab-item" data-tab="tab4">
+                        <i class="fas fa-users"></i>
+                        <span>Team</span>
+                    </button>
+                    <div class="tab-highlight"></div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Tab Content -->
+        <div class="tab-content-container">
+            <div id="tab1" class="tab-pane active">
+                <div class="viewer-widget">
+                    <i class="fas fa-sync refresh-indicator"></i>
+                    <div class="widget-header">
+                        <div class="widget-title">
+                            <div class="live-status"></div>
+                            Live Audience
+                        </div>
+                        <div class="viewer-count">0</div>
+                    </div>
+                    <ul class="viewer-list"></ul>
+                </div>
+                </div>
+            </div>
+    
+            <div id="tab2" class="tab-pane">
+               <div class="style2">
+                <div class="glow" style="top: 20%; left: 50%;"></div>
+                <div class="container-01">
+                  <h1>Live Viewers Dashboard</h1>
+                  <div id="randomNumber-01">0</div>
+                  <div class="viewer-label-01">CURRENTLY WATCHING</div>
+                  <div id="names-01"></div>
+                </div>
+               </div>
+            </div>
+    
+            <div id="tab3" class="tab-pane">
+                <div class="style3">
+                    <div class="glow-3" style="top: 20%; left: 50%;"></div>
+                    <div class="container-3">
+                      <h1>Live Viewers Dashboard</h1>
+                      <div id="randomNumber-3">0</div>
+                      <div class="viewer-label-3">CURRENTLY WATCHING</div>
+                      <div id="names-3"></div>
+                    </div>
+                  </div>
+            </div>
+    
+            <div id="tab4" class="tab-pane">
+                <div class="pane-content">
+                    <h2>Team Management</h2>
+                    <div class="team-grid">
+                        <!-- Team member cards -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
